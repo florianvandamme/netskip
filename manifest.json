@@ -1,0 +1,12 @@
+{
+    "description": "Automatically skips Netflix intros",
+    "manifest_version": 2,
+    "name": "Netskip",
+    "version": "0.9",
+    "content_scripts": [
+        {
+            "matches": ["*://*.netflix.com/*"],
+            "js": ["netskip.js"]
+        }
+    ]
+}
